@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title></title>
+		<meta charset="UTF-8">
+		<title>嫖总嫖娼日记</title>
+
+		<link rel='stylesheet prefetch'
+			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
+		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+
+
+
+		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
+
+		<script type="text/JavaScript" src="./js/index.js"></script>
+		<link rel="stylesheet" href="./css/style.css">
 	</head>
+
 	<body>
-		
+
+
+		<div class="structure" ng-app="app" ng-controller="HomeController">
+
+			<div class="timeline" id="timeline">
+				<div class="date">
+					<div id="goal_leaf_20200726" class="goal_wrap goal_leaf" ng-show="goal_leaf_20200726">
+						<i class="fa fa-leaf" aria-hidden="true"></i>
+					</div>
+					<p class="focus">
+						<a href="#">2020-07-26</a>
+					</p>
+				</div>
+			</div>
+
+
+			<!-- <div class="timeline" id="timeline">
+								
+				<div ng-repeat="date in dates track by $index" class="date date-{{$index}}">
+					<div id="goal_building_{{date}}" class="goal_wrap goal_building" ng-show="goal_building_{{date}}">
+						<i class="fa fa-building" aria-hidden="true"></i>
+					</div>
+					<div id="goal_graduation_{{date}}" class="goal_wrap goal_graduation"
+						ng-show="goal_graduation_{{date}}">
+						<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+					</div>
+					<div id="goal_leaf_{{date}}" class="goal_wrap goal_leaf" ng-show="goal_leaf_{{date}}">
+						<i class="fa fa-leaf" aria-hidden="true"></i>
+					</div>
+					<p class="focus">
+						<a href="#">{{paraseDate(date)}}</a>
+					</p>
+				</div>
+			</div> -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h1 class="title">{{goal_title}}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</body>
 </html>
