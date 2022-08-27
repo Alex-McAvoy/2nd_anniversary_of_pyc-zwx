@@ -3,10 +3,11 @@ var app = angular.module('app', []);
 app.controller('HomeController', function($scope) {
 
 	$scope.goal_title = "嫖总嫖娼日记";
-	
-    //图标显示
-	$scope.goal_leaf_20200726 = true;
-	
+
+	//图标显示
+	$scope.goal_20200726 = true;
+	$scope.goal_20200824 = true;
+
 });
 
 $(document).ready(function(e) {
@@ -32,42 +33,24 @@ $(document).ready(function(e) {
 		});
 	});
 
-	$('#goal_building_20200726').click(function() {
-		console.log('goal click');
-		$('body').fadeTo('ease', 0.3, function() {
-			$(this).css('background-image',
-				'url(../img/20200726.jpg)'
-			);
-		}).fadeTo('slow', 1);
-
+	//2020-07-26
+	$("#goal_20200726").click(function() {
+		$("body").fadeTo("ease", 0.3, function() {
+			$(this).css({
+				"background": "url(./img/20200726.jpg) no-repeat fixed",
+				"background-size": "cover"
+			});
+		}).fadeTo('slow', 2);
 	});
 	
-	// $('#goal_graduation_20200726').click(function() {
-	// 	// console.log('goal click');
-	// 	$('body').fadeTo('ease', 0.3, function() {
-	// 		$(this).css('background-image',
-	// 			'url(../img/20200726.jpg)');
-	// 	}).fadeTo('slow', 1);
-	// });
-
-	$('#goal_leaf_20200726').click(function() {
-		// console.log('goal click');
-		$('body').fadeTo('ease', 0.3, function() {
-			$(this).css('background-image',
-				'url()'
-			);
-		}).fadeTo('slow', 1);
+	//2020-08-24
+	$("#goal_20200824").click(function() {
+		$("body").fadeTo("ease", 0.3, function() {
+			$(this).css({
+				"background": "url(./img/20200824.jpg) no-repeat fixed",
+				"background-size": "cover"
+			});
+		}).fadeTo('slow', 2);
 	});
-	
-	// $('#goal_graduation_20220823').click(function() {
-	// 	// console.log('goal click');
-	// 	$('body').fadeTo('ease', 0.3, function() {
-	// 		$(this).css('background-image',
-	// 			'url(https://placeimg.com/804/804/nature)');
-	// 	}).fadeTo('slow', 1);
-	// });
-
-	
-
 
 });
