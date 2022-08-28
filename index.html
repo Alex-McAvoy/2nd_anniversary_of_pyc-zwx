@@ -5,7 +5,6 @@
 		<title>你好哇，张惟肖</title>
 		<link rel="shortcut icon" href="./resource/logo.ico" type="image/x-icon">
 
-
 		<link rel='stylesheet prefetch'
 			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
 		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
@@ -13,6 +12,7 @@
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
 
+		<link rel="stylesheet" href="./css/reset.css">
 		<!-- 主页样式 -->
 		<script type="text/JavaScript" src="./js/index.js"></script>
 		<link rel="stylesheet" href="./css/index.css">
@@ -21,15 +21,18 @@
 		<script type="text/JavaScript" src="./js/title.min.js"></script>
 		<!-- 箭头样式 -->
 		<link rel="stylesheet" href="./css/arrow.css">
-
+		<!-- 点击粒子特效 -->
+		<script type="text/javascript" src="./js/cursor-effects.js"></script>
+		<!-- 光标样式 -->
+		<link rel="stylesheet" type="text/css" href="./css/mouse_cursor.css">
 	</head>
 	<body>
 		<div class="structure" ng-app="app" ng-controller="HomeController">
 			<!-- BGM -->
-			<audio autoplay="autoplay" loop="loop" controls="controls" style="float: right">
+			<audio class="bgm" autoplay="autoplay" loop="loop" controls="controls">
 				<source src="./resource/index.mp3" type="audio/mpeg">
 			</audio>
-			
+
 			<!-- 标题 -->
 			<div class="container">
 				<div class="row">
