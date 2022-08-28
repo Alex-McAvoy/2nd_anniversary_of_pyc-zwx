@@ -3,9 +3,12 @@ body {
 	padding: 0;
 	margin: 0;
 	transition: all 1s ease;
+	width: 100%;
+	height: 800px;
 	background: url("../resource/background.jpg") no-repeat fixed center;
 	background-size: cover;
-	pointer-events: auto; /* 事件穿透，冒泡 */
+	pointer-events: auto;
+	/* 事件穿透，冒泡 */
 }
 
 /* 透明遮罩层 */
@@ -16,13 +19,14 @@ body::before {
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	pointer-events: none; /* 事件穿透，冒泡 */
-}
-a {
-	color: #fff;
-	text-decoration: none;
+	pointer-events: none;
+	/* 事件穿透，冒泡 */
 }
 
+/* BGM */
+.bgm{
+	float: right;
+}
 /* 时间轴 */
 .timeline {
 	position: absolute;
@@ -67,6 +71,12 @@ a {
 	height: 50px;
 }
 
+/* 日期跳转 */
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
 p.focus {
 	position: absolute;
 	top: 0;
@@ -96,6 +106,7 @@ p.focus::after {
 	left: 9px;
 }
 
+/* 跳转光标 */
 .goal_wrap {
 	position: absolute;
 	width: 50px;
