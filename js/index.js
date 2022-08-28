@@ -30,20 +30,46 @@ app.controller('HomeController', function($scope) {
 
 $(document).ready(function(e) {
 	var viewport = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	console.log(viewport);
+	// console.log(viewport);
 
 
 	$('a').click(function(e) {
 		e.preventDefault()
 	})
 
+	 
 	$('.goal_wrap').click(function() {
 		var diff = $(this).parent()[0].offsetLeft;
+		var temp = $(this).parent()[0].children[0];
+		alert(temp.attr(""));
 		$('.date .goal_wrap').removeClass('active bounce');
 		$(this).addClass('active bounce');
-		console.log(diff);
-		console.log((viewport - diff));
 		TweenLite.to($('.date').parent(), 1, {
+			x: ((viewport * 0.5) - diff),
+			onComplete: function() {
+				console.log('success');
+			}
+		});
+	});
+	
+
+	//左箭头
+	$("#left_arrow").click(function(){
+		var diff = 380;
+		TweenLite.to($("#timeline"), 1, {
+			x: ((viewport * 0.5) - diff),
+			onComplete: function() {
+				console.log('success');
+			}
+		});
+	});
+	
+	//右箭头
+	$("#right_arrow").click(function(){
+		alert($(this).className)
+		var diff = $(this).parent()[0].offsetLeft;
+		alert($(this).parent()[0].className)
+		TweenLite.to($("#timeline"), 1, {
 			x: ((viewport * 0.5) - diff),
 			onComplete: function() {
 				console.log('success');
@@ -251,5 +277,5 @@ $(document).ready(function(e) {
 		}).fadeTo('slow', 2);
 	});
 	
-
+	
 });
