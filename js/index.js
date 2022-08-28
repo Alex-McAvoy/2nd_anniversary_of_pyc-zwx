@@ -41,7 +41,7 @@ $(document).ready(function(e) {
 	$('.goal_wrap').click(function() {
 		var diff = $(this).parent()[0].offsetLeft;
 		var temp = $(this).parent()[0].children[0];
-		alert(temp.attr(""));
+		// alert(temp.attr(""));
 		$('.date .goal_wrap').removeClass('active bounce');
 		$(this).addClass('active bounce');
 		TweenLite.to($('.date').parent(), 1, {
