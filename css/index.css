@@ -7,8 +7,7 @@ body {
 	height: 800px;
 	background: url("../resource/background.jpg") no-repeat fixed center;
 	background-size: cover;
-	pointer-events: auto;
-	/* 事件穿透，冒泡 */
+	pointer-events: auto; /* 事件穿透，冒泡 */
 }
 
 /* 透明遮罩层 */
@@ -19,8 +18,7 @@ body::before {
 	top: 0;
 	bottom: 0;
 	width: 100%;
-	pointer-events: none;
-	/* 事件穿透，冒泡 */
+	pointer-events: none; /* 事件穿透，冒泡 */
 }
 
 /* BGM */
