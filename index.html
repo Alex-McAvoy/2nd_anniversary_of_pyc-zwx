@@ -7,18 +7,22 @@
 
 		<link rel='stylesheet prefetch'
 			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
-		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+		<link rel="stylesheet" href="./framework/bootstrap-3.4.1-dist.min.css">
+		<script src="./framework/jquery-3.4.1.min.js"></script>
+		<script src="./framework/bootstrap-3.4.1-dist.min.js"></script>
+		<script src="./framework/bootbox-5.5.2.min.js"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
 
+
+		<!-- 重置样式表 -->
 		<link rel="stylesheet" href="./css/reset.css">
 		<!-- 主页样式 -->
 		<script type="text/JavaScript" src="./js/index.js"></script>
 		<link rel="stylesheet" href="./css/index.css">
 		<!-- 标题文字样式 -->
 		<link rel="stylesheet" href="./css/title.css">
-		<script type="text/JavaScript" src="./js/title.min.js"></script>
+		<script type="text/JavaScript" src="./framework/StyleFix.min.js"></script>
 		<!-- 箭头样式 -->
 		<link rel="stylesheet" href="./css/arrow.css">
 		<!-- 点击粒子特效 -->
@@ -28,16 +32,22 @@
 		<!-- 樱花飘落 -->
 		<script type="text/javascript" src="./js/sakura-falling.js"></script>
 		<link rel="stylesheet" type="text/css" href="./css/sakura-falling.css">
+		<!-- BGM是否自动播放 -->
+		<script type="text/javascript" src="./js/bgm.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/bgm.css">
+		<style>
+			
+		</style>
 	</head>
 	<body>
 		<!-- 樱花飘落 -->
 		<div class="sakura">
 			<img id="sakura-img" src="./resource/sakura.png" />
 		</div>
-		
+
 		<div class="structure" ng-app="app" ng-controller="HomeController">
 			<!-- BGM -->
-			<audio class="bgm" autoplay="autoplay" loop="loop" controls="controls">
+			<audio class="bgm" loop="loop" controls="controls">
 				<source src="./resource/index.mp3" type="audio/mpeg">
 			</audio>
 

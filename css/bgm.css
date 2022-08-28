@@ -1,0 +1,15 @@
+/* BGM */
+.bgm{
+	float: right;
+}
+
+/* 自动播放confirm框 */
+.modal-dialog {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 230px;
+	height: 130px;
+	margin-left: -100px;
+	margin-top: -50px;
+}

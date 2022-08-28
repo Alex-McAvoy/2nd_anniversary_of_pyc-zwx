@@ -21,10 +21,6 @@ body::before {
 	pointer-events: none; /* 事件穿透，冒泡 */
 }
 
-/* BGM */
-.bgm{
-	float: right;
-}
 /* 时间轴 */
 .timeline {
 	position: absolute;
