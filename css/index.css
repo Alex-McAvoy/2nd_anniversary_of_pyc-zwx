@@ -3,13 +3,12 @@ body {
 	padding: 0;
 	margin: 0;
 	transition: all 1s ease;
-}
-
-body {
 	background: url("../resource/background.jpg") no-repeat fixed center;
 	background-size: cover;
+	pointer-events: auto; /* 事件穿透，冒泡 */
 }
 
+/* 透明遮罩层 */
 body::before {
 	content: '';
 	background: rgba(0, 0, 0, 0.2);
@@ -17,6 +16,7 @@ body::before {
 	top: 0;
 	bottom: 0;
 	width: 100%;
+	pointer-events: none; /* 事件穿透，冒泡 */
 }
 a {
 	color: #fff;
