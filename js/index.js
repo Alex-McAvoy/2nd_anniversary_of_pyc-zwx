@@ -30,25 +30,53 @@ app.controller('HomeController', function($scope) {
 
 $(document).ready(function(e) {
 	var viewport = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-	console.log(viewport);
+	// console.log(viewport);
 
 
 	$('a').click(function(e) {
 		e.preventDefault()
 	})
 
+	//点击图标移动
 	$('.goal_wrap').click(function() {
 		var diff = $(this).parent()[0].offsetLeft;
 		$('.date .goal_wrap').removeClass('active bounce');
 		$(this).addClass('active bounce');
-		console.log(diff);
-		console.log((viewport - diff));
 		TweenLite.to($('.date').parent(), 1, {
 			x: ((viewport * 0.5) - diff),
 			onComplete: function() {
 				console.log('success');
 			}
 		});
+	});
+
+	var count = 3;
+	//左箭头
+	$("#left_arrow").click(function() {
+		if (count > 3) {
+			var diff = (count-2) * 380;
+			count -= 1;
+			TweenLite.to($("#timeline"), 1, {
+				x: ((viewport * 0.5) - diff),
+				onComplete: function() {
+					console.log(count);
+				}
+			});
+		}
+	});
+
+	//右箭头
+	$("#right_arrow").click(function() {
+		if (count <= 18) {
+			var diff = count * 380;
+			count += 1;
+			TweenLite.to($("#timeline"), 1, {
+				x: ((viewport * 0.5) - diff),
+				onComplete: function() {
+					console.log(count);
+				}
+			});
+		}
 	});
 
 	//2020-07-26
@@ -60,7 +88,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2020-08-24
 	$("#goal_20200824").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -70,7 +98,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2020-09-03
 	$("#goal_20200903").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -80,7 +108,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2020-09-05
 	$("#goal_20200905").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -90,7 +118,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2020-09-20
 	$("#goal_20200920").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -100,7 +128,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2020-10-03
 	$("#goal_20201003").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -110,7 +138,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2020-11-14
 	$("#goal_20201114").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -120,7 +148,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-01-01
 	$("#goal_20210101").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -130,7 +158,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-02-02
 	$("#goal_20210202").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -140,7 +168,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-02-14
 	$("#goal_20210214").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -150,7 +178,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-04-08
 	$("#goal_20210408").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -160,7 +188,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-05-20
 	$("#goal_20210520").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -170,7 +198,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-06-26
 	$("#goal_20210626").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -180,7 +208,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-08-14
 	$("#goal_20210814").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -190,7 +218,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-09-05
 	$("#goal_20210905").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -200,7 +228,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2021-11-20
 	$("#goal_20211120").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -210,7 +238,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2022-01-06
 	$("#goal_20220106").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -220,7 +248,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2022-01-23
 	$("#goal_20220123").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -230,7 +258,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2022-07-16
 	$("#goal_20220716").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -240,7 +268,7 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 	//2022-09-05
 	$("#goal_20220905").click(function() {
 		$("body").fadeTo("ease", 0.3, function() {
@@ -250,6 +278,6 @@ $(document).ready(function(e) {
 			});
 		}).fadeTo('slow', 2);
 	});
-	
+
 
 });
