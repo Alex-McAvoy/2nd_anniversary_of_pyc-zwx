@@ -7,41 +7,46 @@
 		<link rel='stylesheet prefetch'
 			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
 		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-
-
-
 		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
 
+		<!-- 主页样式 -->
 		<script type="text/JavaScript" src="./js/index.js"></script>
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/index.css">
+		<!-- 标题文字样式 -->
+		<link rel="stylesheet" href="./css/title.css">
+		<script type="text/JavaScript" src="./js/title.min.js"></script>
+		<!-- 箭头样式 -->
+		<link rel="stylesheet" href="./css/arrow.css">
 	</head>
-
 	<body>
-
 
 		<div class="structure" ng-app="app" ng-controller="HomeController">
 			<!-- 标题 -->
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1 class="title">请握紧我的手<br>走过我们的两年<br>迈向今生的许多年</h1>
+						<div class="title">
+							<div class="wave loading">请握紧我的手</div><br>
+							<div class="wave loading">走过我们的两年</div><br>
+							<div class="wave loading">迈向今生的许多年</div><br>
+						</div>
 					</div>
 				</div>
 			</div>
-			
+
 			<!-- 左箭头 -->
-			<div class="left_arrow_div" >
+			<div class="left_arrow_div">
 				<div class="left_arrow" id="left_arrow"></div>
 			</div>
 			<!-- 右箭头 -->
-			<div class="right_arrow_div" >
+			<div class="right_arrow_div">
 				<div class="right_arrow" id="right_arrow"></div>
 			</div>
-			
+
 			<!-- 时间轴 -->
-			<div class="timeline" id="timeline">	
+			<div class="timeline" id="timeline">
 				<!-- 2020-01 -->
 				<div class="date_no_line">
 					<p class="focus">2020-01</p>
