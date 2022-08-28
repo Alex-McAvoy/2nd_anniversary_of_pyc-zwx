@@ -15,7 +15,7 @@
 }
 
 .wave {
-	background-image: url("../img/wave.png");
+	background-image: url("../resource/wave.png");
 	-moz-background-clip: text;
 	-o-background-clip: text;
 	-webkit-background-clip: text;

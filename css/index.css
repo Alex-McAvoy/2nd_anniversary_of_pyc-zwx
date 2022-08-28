@@ -6,7 +6,7 @@ body {
 }
 
 body {
-	background: url("../img/background.jpg") no-repeat fixed center;
+	background: url("../resource/background.jpg") no-repeat fixed center;
 	background-size: cover;
 }
 
