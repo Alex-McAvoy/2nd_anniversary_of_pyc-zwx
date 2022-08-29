@@ -1,5 +1,5 @@
-/* 华为P40 */
-@media only screen and (min-device-width: 360px) and (max-device-height: 780px) {
+/* PE */
+@media only screen and (min-device-width: 300px) {
 	body {
 		overflow: hidden;
 		padding: 0;
@@ -70,108 +70,108 @@
 	}
 
 	/* 日期跳转 */
-		a {
-			color: #fff;
-			text-decoration: none;
-		}
-	
-		p.focus {
-			position: absolute;
-			top: 0;
-			margin-left: -14px;
-			padding-top: 10px;
-		}
-	
-		p.focus::before {
-			content: '';
-			width: 20px;
-			height: 20px;
-			border: 1px solid #fff;
-			border-radius: 50%;
-			position: absolute;
-			top: -10px;
-			left: 3.5px;
-		}
-	
-		p.focus::after {
-			content: '';
-			position: absolute;
-			width: 10px;
-			height: 10px;
-			background: #fff;
-			border-radius: 50%;
-			top: -5px;
-			left: 9px;
-		}
-	
-		/* 跳转光标 */
-		.goal_wrap {
-			position: absolute;
-			width: 50px;
-			height: 50px;
-			border: 2px solid #fff;
-			text-align: center;
-			border-radius: 50%;
-			line-height: 50px;
-			top: -100px;
-			margin-left: -24px;
-			font-size: 24px;
-			transition: all 0.5s ease;
-		}
-	
-		.goal_wrap:hover {
-			width: 60px;
-			height: 60px;
-			line-height: 60px;
-			margin-left: -30px;
-			font-size: 30px;
-			cursor: pointer;
-		}
-	
-		.goal_wrap.active {
-			top: -160px;
-			width: 80px;
-			height: 80px;
-			line-height: 80px;
-			margin-left: -40px;
-			font-size: 40px;
-			cursor: pointer;
-		}
-	
-		.bounce {
-			animation: bounce 1s .5s;
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	p.focus {
+		position: absolute;
+		top: 0;
+		margin-left: -14px;
+		padding-top: 10px;
+	}
+
+	p.focus::before {
+		content: '';
+		width: 20px;
+		height: 20px;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		position: absolute;
+		top: -10px;
+		left: 3.5px;
+	}
+
+	p.focus::after {
+		content: '';
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		background: #fff;
+		border-radius: 50%;
+		top: -5px;
+		left: 9px;
+	}
+
+	/* 跳转光标 */
+	.goal_wrap {
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border: 2px solid #fff;
+		text-align: center;
+		border-radius: 50%;
+		line-height: 50px;
+		top: -100px;
+		margin-left: -24px;
+		font-size: 24px;
+		transition: all 0.5s ease;
+	}
+
+	.goal_wrap:hover {
+		width: 60px;
+		height: 60px;
+		line-height: 60px;
+		margin-left: -30px;
+		font-size: 30px;
+		cursor: pointer;
+	}
+
+	.goal_wrap.active {
+		top: -160px;
+		width: 80px;
+		height: 80px;
+		line-height: 80px;
+		margin-left: -40px;
+		font-size: 40px;
+		cursor: pointer;
+	}
+
+	.bounce {
+		animation: bounce 1s .5s;
+		transform: scale(0.85);
+	}
+
+	@keyframes bounce {
+		0% {
 			transform: scale(0.85);
+			opacity: 1;
 		}
-	
-		@keyframes bounce {
-			0% {
-				transform: scale(0.85);
-				opacity: 1;
-			}
-	
-			50% {
-				transform: scale(0.95);
-				opacity: .7;
-			}
-	
-			60% {
-				transform: scale(0.6);
-				opacity: 1;
-			}
-	
-			80% {
-				transform: scale(1.6)
-			}
-	
-			100% {
-				transform: scale(1.1)
-			}
+
+		50% {
+			transform: scale(0.95);
+			opacity: .7;
 		}
-	
+
+		60% {
+			transform: scale(0.6);
+			opacity: 1;
+		}
+
+		80% {
+			transform: scale(1.6)
+		}
+
+		100% {
+			transform: scale(1.1)
+		}
+	}
+
 
 }
 
-/* 浏览器大于 960px 的样式 */
+/* PC */
 @media only screen and (min-width: 960px) {
 	body {
 		overflow: hidden;

@@ -1,5 +1,5 @@
-/* 华为P40 */
-@media only screen and (min-device-width: 360px) and (max-device-height: 780px) {
+/* PE */
+@media only screen and (min-device-width: 300px) {
 	/* 标题 */
 	.title {
 		position: relative;
@@ -51,7 +51,7 @@
 	}
 }
 
-/* 浏览器大于 960px 的样式 */
+/* PC */
 @media only screen and (min-width: 960px) {
 
 	/* 标题 */
