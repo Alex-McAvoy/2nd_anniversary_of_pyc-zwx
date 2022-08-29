@@ -222,12 +222,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200726.png) no-repeat fixed",
+					"background": "url(./img/20200726-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200726.png) no-repeat fixed",
+					"background": "url(./img/20200726-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -241,12 +241,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200824.png) no-repeat fixed",
+					"background": "url(./img/20200824-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200824.png) no-repeat fixed",
+					"background": "url(./img/20200824-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -260,12 +260,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200903.png) no-repeat fixed",
+					"background": "url(./img/20200903-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200903.png) no-repeat fixed",
+					"background": "url(./img/20200903-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -279,12 +279,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200905.png) no-repeat fixed",
+					"background": "url(./img/20200905-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200905.png) no-repeat fixed",
+					"background": "url(./img/20200905-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -299,12 +299,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200920.png) no-repeat fixed",
+					"background": "url(./img/20200920-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200920.png) no-repeat fixed",
+					"background": "url(./img/20200920-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -319,12 +319,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20201003.png) no-repeat fixed",
+					"background": "url(./img/20201003-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20201003.png) no-repeat fixed",
+					"background": "url(./img/20201003-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -338,12 +338,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20201114.png) no-repeat fixed",
+					"background": "url(./img/20201114-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20201114.png) no-repeat fixed",
+					"background": "url(./img/20201114-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -357,12 +357,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210101.png) no-repeat fixed",
+					"background": "url(./img/20210101-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210101.png) no-repeat fixed",
+					"background": "url(./img/20210101-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -376,12 +376,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210202.png) no-repeat fixed",
+					"background": "url(./img/20210202-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210202.png) no-repeat fixed",
+					"background": "url(./img/20210202-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -395,12 +395,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210214.png) no-repeat fixed",
+					"background": "url(./img/20210214-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210214.png) no-repeat fixed",
+					"background": "url(./img/20210214-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -414,12 +414,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210408.png) no-repeat fixed",
+					"background": "url(./img/20210408-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210408.png) no-repeat fixed",
+					"background": "url(./img/20210408-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -433,12 +433,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210520.png) no-repeat fixed",
+					"background": "url(./img/20210520-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210520.png) no-repeat fixed",
+					"background": "url(./img/20210520-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -453,12 +453,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210626.png) no-repeat fixed",
+					"background": "url(./img/20210626-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210626.png) no-repeat fixed",
+					"background": "url(./img/20210626-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -472,12 +472,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210814.png) no-repeat fixed",
+					"background": "url(./img/20210814-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210814.png) no-repeat fixed",
+					"background": "url(./img/20210814-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -491,12 +491,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210905.png) no-repeat fixed",
+					"background": "url(./img/20210905-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210905.png) no-repeat fixed",
+					"background": "url(./img/20210905-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -511,12 +511,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20211120.png) no-repeat fixed",
+					"background": "url(./img/20211120-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20211120.png) no-repeat fixed",
+					"background": "url(./img/20211120-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -530,12 +530,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220106.png) no-repeat fixed",
+					"background": "url(./img/20220106-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220106.png) no-repeat fixed",
+					"background": "url(./img/20220106-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -549,12 +549,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220123.png) no-repeat fixed",
+					"background": "url(./img/20220123-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220123.png) no-repeat fixed",
+					"background": "url(./img/20220123-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -567,12 +567,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220716.png) no-repeat fixed",
+					"background": "url(./img/20220716-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220716.png) no-repeat fixed",
+					"background": "url(./img/20220716-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -591,12 +591,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220905.png) no-repeat fixed",
+					"background": "url(./img/20220905-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220905.png) no-repeat fixed",
+					"background": "url(./img/20220905-PC.png) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
