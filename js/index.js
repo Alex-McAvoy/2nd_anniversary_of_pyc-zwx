@@ -187,19 +187,12 @@ $(document).ready(function(e) {
 		set: function(newVal) {
 			this._value = newVal;
 			console.log('set:' + this._value);
-			if (viewport < 960) { // PE
-				
-			
-			} else { //PC
-				
-			}
-			
+
 			if (viewport < 960 && newVal == 1) { // PE
 				$(".left_arrow_div").css({
 					"display": "none"
 				});
-			}
-			else if(viewport >= 960 &&newVal == 3) { // PC
+			} else if (viewport >= 960 && newVal == 3) { // PC
 				$(".left_arrow_div").css({
 					"display": "none"
 				});
@@ -215,7 +208,6 @@ $(document).ready(function(e) {
 					"display": "block"
 				});
 			}
-			
 		},
 		get: function() {
 			console.log('get:' + this._value);
@@ -228,10 +220,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">一切的开始</div><br>' +
 			'<div class="wave loading">纪念我们那秒不可及的缘分</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20200726.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20200726.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20200726.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -240,10 +239,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">我们看的第一场电影</div><br>' +
 			'<div class="wave loading">你还记得“125军”和“摸头杀”么</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20200824.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20200824.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20200824.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -252,10 +258,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">hhhhh</div><br>' +
 			'<div class="wave loading ">第一次完美踩雷的“投喂”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20200903.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20200903.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20200903.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -264,10 +277,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">The first day</div><br>' +
 			'<div class="wave loading">还记得那天的故事么</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20200905.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20200905.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20200905.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -277,10 +297,17 @@ $(document).ready(function(e) {
 			'<div class="wave loading">第一次暴躁的“护短”</div><br>' +
 			'<div class="wave loading">晚风与我们</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20200920.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20200920.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20200920.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -290,10 +317,17 @@ $(document).ready(function(e) {
 			'<div class="wave loading">阿那亚的海风与日出</div><br>' +
 			'<div class="wave loading">你还记得吗？</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20201003.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20201003.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20201003.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -302,10 +336,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">陪你度过的第一个生日</div><br>' +
 			'<div class="wave loading">“成为网红第一步”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20201114.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20201114.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20201114.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -314,10 +355,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">我们的第一次跨年</div><br>' +
 			'<div class="wave loading">“一起看的第一场演唱会”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210101.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210101.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210101.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -326,10 +374,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">第一次滑雪</div><br>' +
 			'<div class="wave loading">“也是你第一次来到我生活的地方”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210202.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210202.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210202.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -338,10 +393,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">第一个情人节</div><br>' +
 			'<div class="wave loading">“Hakuna Matata”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210214.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210214.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210214.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -350,10 +412,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">陪我度过的第一个生日</div><br>' +
 			'<div class="wave loading">我爱你，胜过朝夕</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210408.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210408.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210408.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -362,10 +431,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">第一个520</div><br>' +
 			'<div class="wave loading">星河滚烫，你是人间理想</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210520.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210520.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210520.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -375,10 +451,17 @@ $(document).ready(function(e) {
 			'<div class="wave loading">我也终于享受了一次毕业</div><br>' +
 			'<div class="wave loading ">我们毕业啦</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210626.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210626.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210626.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -387,10 +470,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">度过我们的第一个七夕</div><br>' +
 			'<div class="wave loading">也是我第一次收到了“花”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210814.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210814.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210814.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -399,10 +489,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">我们一周年啦！！！</div><br>' +
 			'<div class="wave loading">感谢我们的双向奔赴</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20210905.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20210905.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20210905.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -412,10 +509,17 @@ $(document).ready(function(e) {
 			'<div class="wave loading ">同时我们又度过了</div><br>' +
 			'<div class="wave loading">好多生日中的第二个生日</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20211120.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20211120.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20211120.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -424,10 +528,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">我们的第一次“环球之旅”</div><br>' +
 			'<div class="wave loading">之后还要一起去好多次哦</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20220106.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20220106.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20220106.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -436,10 +547,17 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">第一个密室</div><br>' +
 			'<div class="wave loading">“看，那里有个大冤种”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20220123.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20220123.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20220123.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -447,10 +565,17 @@ $(document).ready(function(e) {
 	$("#goal_20220716").click(function() {
 		$(".title").html('<div class="wave loading ">真正意义上的第一次“惊喜”</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20220716.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20220716.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20220716.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
@@ -464,10 +589,17 @@ $(document).ready(function(e) {
 			'<div class="wave loading">坚定地迈向未来</div><br>');
 
 		$("body").fadeTo("ease", 0.3, function() {
-			$(this).css({
-				"background": "url(./img/20220905.png) no-repeat fixed",
-				"background-size": "cover"
-			});
+			if (viewport < 960) { // PE
+				$(this).css({
+					"background": "url(./img/20220905.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			} else { // PC
+				$(this).css({
+					"background": "url(./img/20220905.png) no-repeat fixed",
+					"background-size": "cover"
+				});
+			}
 		}).fadeTo('slow', 2);
 	});
 
