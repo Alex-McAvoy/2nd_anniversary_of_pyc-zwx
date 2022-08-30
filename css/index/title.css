@@ -3,15 +3,16 @@
 	/* 标题 */
 	.title {
 		position: relative;
-		top: 200px;
+		/* top: 100%; */
+		margin-top: 20%; 
 	}
 	
 	.loading {
 		font-size: 15pt;
 		text-align: center;
 		font-weight: bold;
-		height: 50px;
-		line-height: 50px;
+		/* height: 10%; */
+		line-height: 100%;
 		vertical-align: bottom;
 		text-transform: uppercase;
 	}
