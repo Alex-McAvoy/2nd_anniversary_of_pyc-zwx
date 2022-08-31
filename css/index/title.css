@@ -1,0 +1,108 @@
+/* PE */
+@media only screen and (min-device-width: 300px) {
+	/* 标题 */
+	.title {
+		position: relative;
+		/* top: 100%; */
+		margin-top: 20%; 
+	}
+	
+	.loading {
+		font-size: 15pt;
+		text-align: center;
+		font-weight: bold;
+		/* height: 10%; */
+		line-height: 100%;
+		vertical-align: bottom;
+		text-transform: uppercase;
+	}
+	
+	.wave {
+		background-image: url("../../resource/wave.png");
+		-moz-background-clip: text;
+		-o-background-clip: text;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+		animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+		background-size: 200px 100px;
+		background-repeat: repeat-x;
+		opacity: 1;
+	}
+	
+	@keyframes wave-animation {
+		0% {
+			background-position: 0 bottom;
+		}
+	
+		100% {
+			background-position: 200px bottom;
+		}
+	}
+	
+	@keyframes loading-animation {
+		0% {
+			background-size: 200px 0px;
+		}
+	
+		100% {
+			background-size: 200px 200px;
+		}
+	}
+}
+
+/* PC */
+@media only screen and (min-width: 960px) {
+
+	/* 标题 */
+	.title {
+		position: relative;
+		top: 20%;
+		margin-top: 0%; 
+	}
+
+	.loading {
+		font-size: 50pt;
+		text-align: center;
+		font-weight: bold;
+		height: 100px;
+		line-height: 110px;
+		vertical-align: bottom;
+		text-transform: uppercase;
+	}
+
+	.wave {
+		background-image: url("../../resource/wave.png");
+		-moz-background-clip: text;
+		-o-background-clip: text;
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		text-shadow: 0px 0px rgba(255, 255, 255, 0.06);
+		animation: wave-animation 1s infinite linear, loading-animation 10s infinite linear alternate;
+		background-size: 200px 100px;
+		background-repeat: repeat-x;
+		opacity: 1;
+	}
+
+	@keyframes wave-animation {
+		0% {
+			background-position: 0 bottom;
+		}
+
+		100% {
+			background-position: 200px bottom;
+		}
+	}
+
+	@keyframes loading-animation {
+		0% {
+			background-size: 200px 0px;
+		}
+
+		100% {
+			background-size: 200px 200px;
+		}
+	}
+}

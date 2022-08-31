@@ -2,44 +2,116 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>嫖总嫖娼日记</title>
+		<meta name="viewport"
+			content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+
+		<title>你好哇，张惟肖</title>
+		<link rel="shortcut icon" href="./resource/logo.ico" type="image/x-icon">
 
 		<link rel='stylesheet prefetch'
 			href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css'>
-		<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
-
-
-
-		<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+		<link rel="stylesheet" href="./framework/bootstrap-3.4.1-dist.min.css">
+		<script src="./framework/jquery-3.4.1.min.js"></script>
+		<script src="./framework/bootstrap-3.4.1-dist.min.js"></script>
+		<script src="./framework/bootbox-5.5.2.min.js"></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.4/TweenMax.min.js'></script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script>
 
+
+		<!-- 重置样式表 -->
+		<link rel="stylesheet" href="./css/reset.css">
+		<!-- 主页样式 -->
 		<script type="text/JavaScript" src="./js/index.js"></script>
-		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/index/index.css">
+		<!-- 标题文字样式 -->
+		<link rel="stylesheet" href="./css/index/title.css">
+		<script type="text/JavaScript" src="./framework/StyleFix.min.js"></script>
+		<!-- 箭头样式 -->
+		<link rel="stylesheet" href="./css/index/arrow.css">
+		<!-- 点击粒子特效 -->
+		<script type="text/javascript" src="./js/cursor-effects.js"></script>
+		<!-- 光标样式 -->
+		<link rel="stylesheet" type="text/css" href="./css/mouse_cursor.css">
+		<!-- 樱花飘落 -->
+		<script type="text/javascript" src="./js/sakura-falling.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/sakura-falling.css">
+		<!-- BGM是否自动播放 -->
+		<script type="text/javascript" src="./js/bgm.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/index/bgm.css">
+		<!-- heart -->
+		<link rel="stylesheet" type="text/css" href="./css/index/heart.css">
+
 	</head>
-
 	<body>
-
+		<!-- 樱花飘落 -->
+		<div class="sakura">
+			<img id="sakura-img" src="./resource/sakura.png" />
+		</div>
 
 		<div class="structure" ng-app="app" ng-controller="HomeController">
+			<!-- BGM -->
+			<audio class="bgm" loop="loop" controls="controls">
+				<source src="./resource/index.mp3" type="audio/mpeg">
+			</audio>
+
+			<!-- 标题 -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="title">
+							<div class="wave loading">请握紧我的手</div><br>
+							<div class="wave loading">走过我们的两年</div><br>
+							<div class="wave loading">迈向今生的许多年</div><br>
+							<div class="heart">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- 左箭头 -->
-			<div class="left_arrow_div" >
+			<div class="left_arrow_div">
 				<div class="left_arrow" id="left_arrow"></div>
 			</div>
 			<!-- 右箭头 -->
-			<div class="right_arrow_div" >
+			<div class="right_arrow_div">
 				<div class="right_arrow" id="right_arrow"></div>
 			</div>
-			
+
+			<div class="timeline"></div>
+
+			<!-- 时间轴 -->
 			<div class="timeline" id="timeline">
-				
-				<!-- 2020-01 -->
+				<!-- Big Bang -->
 				<div class="date_no_line">
-					<p class="focus">2020-01</p>
+					<p class="focus">13.82 Billion BC</p>
 				</div>
-				<!-- 2020-07 -->
+				<!-- 地月系 -->
 				<div class="date_no_line">
-					<p class="focus">2020-07</p>
+					<p class="focus">4.55 Billion BC</p>
+				</div>
+				<!-- 露西 -->
+				<div class="date_no_line">
+					<p class="focus">3.2 Billion BC</p>
+				</div>
+				<!--  -->
+				<div class="date_no_line">
+					<p class="focus">1765 AD</p>
+				</div>
+				<!-- 2020 -->
+				<div class="date_no_line">
+					<p class="focus">2020 AD</p>
 				</div>
 				<!-- 2020-07-26 -->
 				<div class="date">
@@ -52,7 +124,7 @@
 				</div>
 				<!-- 2020-08 -->
 				<div class="date_no_line">
-					<p class="focus">2020-08</p>
+					<p class="focus">Aug. 2020</p>
 				</div>
 				<!-- 2020-08-24 -->
 				<div class="date">
@@ -65,7 +137,7 @@
 				</div>
 				<!-- 2020-09 -->
 				<div class="date_no_line">
-					<p class="focus">2020-09</p>
+					<p class="focus">Sep. 2020</p>
 				</div>
 				<!-- 2020-09-03 -->
 				<div class="date">
@@ -96,7 +168,7 @@
 				</div>
 				<!-- 2020-10 -->
 				<div class="date_no_line">
-					<p class="focus">2020-10</p>
+					<p class="focus">Oct. 2020</p>
 				</div>
 				<!-- 2020-10-03 -->
 				<div class="date">
@@ -109,7 +181,7 @@
 				</div>
 				<!-- 2020-11 -->
 				<div class="date_no_line">
-					<p class="focus">2020-11</p>
+					<p class="focus">Nov. 2020</p>
 				</div>
 				<!-- 2020-11-14 -->
 				<div class="date">
@@ -122,11 +194,11 @@
 				</div>
 				<!-- 2020-12 -->
 				<div class="date_no_line">
-					<p class="focus">2020-12</p>
+					<p class="focus">Dec. 2020</p>
 				</div>
 				<!-- 2021-01 -->
 				<div class="date_no_line">
-					<p class="focus">2021-01</p>
+					<p class="focus">Jan. 2021</p>
 				</div>
 				<!-- 2021-01-01 -->
 				<div class="date">
@@ -139,7 +211,7 @@
 				</div>
 				<!-- 2021-02 -->
 				<div class="date_no_line">
-					<p class="focus">2021-02</p>
+					<p class="focus">Feb. 2021</p>
 				</div>
 				<!-- 2021-02-02 -->
 				<div class="date">
@@ -161,11 +233,11 @@
 				</div>
 				<!-- 2021-03 -->
 				<div class="date_no_line">
-					<p class="focus">2021-03</p>
+					<p class="focus">Mar. 2021</p>
 				</div>
 				<!-- 2021-04 -->
 				<div class="date_no_line">
-					<p class="focus">2021-04</p>
+					<p class="focus">Apr. 2021</p>
 				</div>
 				<!-- 2021-04-08 -->
 				<div class="date">
@@ -178,7 +250,7 @@
 				</div>
 				<!-- 2021-05 -->
 				<div class="date_no_line">
-					<p class="focus">2021-05</p>
+					<p class="focus">May. 2021</p>
 				</div>
 				<!-- 2021-05-20 -->
 				<div class="date">
@@ -191,7 +263,7 @@
 				</div>
 				<!-- 2021-06 -->
 				<div class="date_no_line">
-					<p class="focus">2021-06</p>
+					<p class="focus">Jun. 2021</p>
 				</div>
 				<!-- 2021-06-26 -->
 				<div class="date">
@@ -204,11 +276,11 @@
 				</div>
 				<!-- 2021-07 -->
 				<div class="date_no_line">
-					<p class="focus">2021-07</p>
+					<p class="focus">Jul. 2021</p>
 				</div>
 				<!-- 2021-08 -->
 				<div class="date_no_line">
-					<p class="focus">2021-08</p>
+					<p class="focus">Aug. 2021</p>
 				</div>
 				<!-- 2021-08-14 -->
 				<div class="date">
@@ -221,7 +293,7 @@
 				</div>
 				<!-- 2021-09 -->
 				<div class="date_no_line">
-					<p class="focus">2021-09</p>
+					<p class="focus">Sep. 2021</p>
 				</div>
 				<!-- 2021-09-05 -->
 				<div class="date">
@@ -234,11 +306,11 @@
 				</div>
 				<!-- 2021-10 -->
 				<div class="date_no_line">
-					<p class="focus">2021-10</p>
+					<p class="focus">Oct. 2021</p>
 				</div>
 				<!-- 2021-11 -->
 				<div class="date_no_line">
-					<p class="focus">2021-11</p>
+					<p class="focus">Nov. 2021</p>
 				</div>
 				<!-- 2021-11-20 -->
 				<div class="date">
@@ -251,11 +323,11 @@
 				</div>
 				<!-- 2021-12 -->
 				<div class="date_no_line">
-					<p class="focus">2021-12</p>
+					<p class="focus">Dec. 2021</p>
 				</div>
 				<!-- 2022-01 -->
 				<div class="date_no_line">
-					<p class="focus">2022-01</p>
+					<p class="focus">Jan. 2022</p>
 				</div>
 				<!-- 2022-01-06 -->
 				<div class="date">
@@ -277,27 +349,27 @@
 				</div>
 				<!-- 2022-02 -->
 				<div class="date_no_line">
-					<p class="focus">2022-02</p>
+					<p class="focus">Feb. 2022</p>
 				</div>
 				<!-- 2022-03 -->
 				<div class="date_no_line">
-					<p class="focus">2022-03</p>
+					<p class="focus">Mar. 2022</p>
 				</div>
 				<!-- 2022-04 -->
 				<div class="date_no_line">
-					<p class="focus">2022-04</p>
+					<p class="focus">Apr. 2022</p>
 				</div>
 				<!-- 2022-05 -->
 				<div class="date_no_line">
-					<p class="focus">2022-05</p>
+					<p class="focus">May. 2022</p>
 				</div>
 				<!-- 2022-06 -->
 				<div class="date_no_line">
-					<p class="focus">2022-06</p>
+					<p class="focus">Jun. 2022</p>
 				</div>
 				<!-- 2022-07 -->
 				<div class="date_no_line">
-					<p class="focus">2022-07</p>
+					<p class="focus">Jul. 2022</p>
 				</div>
 				<!-- 2022-07-16 -->
 				<div class="date">
@@ -310,11 +382,11 @@
 				</div>
 				<!-- 2022-08 -->
 				<div class="date_no_line">
-					<p class="focus">2022-08</p>
+					<p class="focus">Aug. 2022</p>
 				</div>
 				<!-- 2022-09 -->
 				<div class="date_no_line">
-					<p class="focus">2022-09</p>
+					<p class="focus">Sep. 2022</p>
 				</div>
 				<!-- 2022-09-05 -->
 				<div class="date">
@@ -327,17 +399,7 @@
 				</div>
 				<!-- future -->
 				<div class="date_no_line">
-					<p class="focus">future</p>
-				</div>
-
-
-			</div>
-
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<h1 class="title">{{goal_title}}</h1>
-					</div>
+					<p class="focus">Future</p>
 				</div>
 			</div>
 		</div>
