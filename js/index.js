@@ -218,11 +218,11 @@ $(document).ready(function(e) {
 	// 2020-07-26
 	$("#goal_20200726").click(function() {
 		$(".title").html('<div class="wave loading ">一切的开始</div><br>' +
-			'<div class="wave loading">纪念我们那秒不可及的缘分</div><br>');
+			'<div class="wave loading">纪念我们那妙不可及的缘分</div><br>');
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200726-PC.png) no-repeat fixed",
+					"background": "url(./img/20200726-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -241,7 +241,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200824-PC.png) no-repeat fixed",
+					"background": "url(./img/20200824-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -260,7 +260,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200903-PC.png) no-repeat fixed",
+					"background": "url(./img/20200903-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -279,7 +279,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200905-PC.png) no-repeat fixed",
+					"background": "url(./img/20200905-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -299,7 +299,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200920-PC.png) no-repeat fixed",
+					"background": "url(./img/20200920-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -319,7 +319,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20201003-PC.png) no-repeat fixed",
+					"background": "url(./img/20201003-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -338,7 +338,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20201114-PC.png) no-repeat fixed",
+					"background": "url(./img/20201114-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -357,7 +357,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210101-PC.png) no-repeat fixed",
+					"background": "url(./img/20210101-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -376,7 +376,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210202-PC.png) no-repeat fixed",
+					"background": "url(./img/20210202-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -395,7 +395,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210214-PC.png) no-repeat fixed",
+					"background": "url(./img/20210214-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -414,7 +414,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210408-PC.png) no-repeat fixed",
+					"background": "url(./img/20210408-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -433,7 +433,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210520-PC.png) no-repeat fixed",
+					"background": "url(./img/20210520-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -453,7 +453,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210626-PC.png) no-repeat fixed",
+					"background": "url(./img/20210626-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -472,7 +472,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210814-PC.png) no-repeat fixed",
+					"background": "url(./img/20210814-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -491,7 +491,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210905-PC.png) no-repeat fixed",
+					"background": "url(./img/20210905-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -511,7 +511,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20211120-PC.png) no-repeat fixed",
+					"background": "url(./img/20211120-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -530,7 +530,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220106-PC.png) no-repeat fixed",
+					"background": "url(./img/20220106-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -549,7 +549,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220123-PC.png) no-repeat fixed",
+					"background": "url(./img/20220123-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -567,7 +567,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220716-PC.png) no-repeat fixed",
+					"background": "url(./img/20220716-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
@@ -591,7 +591,7 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220905-PC.png) no-repeat fixed",
+					"background": "url(./img/20220905-PC.png) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
