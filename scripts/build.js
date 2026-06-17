@@ -8,7 +8,7 @@
  * 构建产物
  * 1. dist/css/anniversary.min.css
  * 2. dist/js/anniversary.min.js
- * 3. dist/framework、dist/img、dist/resource
+ * 3. dist/framework、dist/webp、dist/resource
  */
 const fs = require("fs");
 const path = require("path");
@@ -100,7 +100,7 @@ function copyStaticAssets() {
    * @Description 复制发布时需要保留的静态资源
    */
   copyDir(path.join(rootDir, "framework"), path.join(distDir, "framework"));
-  copyDir(path.join(rootDir, "img"), path.join(distDir, "img"));
+  copyDir(path.join(rootDir, "webp"), path.join(distDir, "webp"));
   copyDir(path.join(rootDir, "resource"), path.join(distDir, "resource"));
 }
 
@@ -116,6 +116,17 @@ function basicCssMinify(source) {
     .replace(/\s*([{}:;,>])\s*/g, "$1")
     .replace(/;}/g, "}")
     .trim();
+}
+
+function rewriteCssUrls(source) {
+  /**
+   * @Description 重写合并后 CSS 中的相对资源路径
+   * @param {string} source CSS 源码
+   * @returns {string} 重写后的 CSS
+   */
+  return source
+    .replaceAll("../../resource/", "../resource/")
+    .replaceAll("../resource/", "../resource/");
 }
 
 function basicJsMinify(source) {
@@ -151,11 +162,12 @@ function buildCss() {
   const source = cssFiles
     .map(file => readUtf8(path.join(rootDir, file)))
     .join("\n");
+  const rewrittenSource = rewriteCssUrls(source);
 
   const CleanCSS = optionalRequire("clean-css");
   const styles = CleanCSS
-    ? new CleanCSS({ level: 2 }).minify(source).styles
-    : basicCssMinify(source);
+    ? new CleanCSS({ level: 2 }).minify(rewrittenSource).styles
+    : basicCssMinify(rewrittenSource);
 
   writeUtf8(path.join(distDir, "css", "anniversary.min.css"), styles);
 }
