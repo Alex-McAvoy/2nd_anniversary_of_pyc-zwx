@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "node scripts/build.js",
+    "build:hexo": "node scripts/build.js --hexo"
+  },
+  "devDependencies": {
+    "clean-css": "^5.3.3",
+    "html-minifier-terser": "^7.2.0",
+    "javascript-obfuscator": "^4.1.1",
+    "terser": "^5.43.1"
+  }
+}
