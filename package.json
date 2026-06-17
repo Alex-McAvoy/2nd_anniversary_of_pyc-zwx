@@ -1,8 +1,16 @@
 {
+  "name": "2nd-anniversary-of-pyc-zwx",
+  "version": "1.0.0",
+  "description": "Static second anniversary memorial page",
+  "main": "index.js",
   "scripts": {
     "build": "node scripts/build.js",
     "build:hexo": "node scripts/build.js --hexo"
   },
+  "keywords": [],
+  "author": "Alex-McAvoy",
+  "license": "GPL-3.0-or-later",
+  "type": "commonjs",
   "devDependencies": {
     "angular": "^1.5.5",
     "clean-css": "^5.3.3",
