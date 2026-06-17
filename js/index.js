@@ -1,6 +1,6 @@
-var app = angular.module('app', []);
+﻿var app = angular.module('app', []);
 
-app.controller('HomeController', function($scope) {
+app.controller('HomeController', ['$scope', function($scope) {
 	//图标显示
 	$scope.goal_20200726 = true;
 	$scope.goal_20200824 = true;
@@ -22,7 +22,7 @@ app.controller('HomeController', function($scope) {
 	$scope.goal_20220123 = true;
 	$scope.goal_20220716 = true;
 	$scope.goal_20220905 = true;
-});
+}]);
 
 // 点击图标后，计算时间轴计数器返回值
 function changeCount(id) {
@@ -222,12 +222,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200726-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20200726-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200726-PC.png) no-repeat fixed",
+					"background": "url(./webp/20200726-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -241,12 +241,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200824-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20200824-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200824-PC.png) no-repeat fixed",
+					"background": "url(./webp/20200824-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -260,12 +260,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200903-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20200903-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200903-PC.png) no-repeat fixed",
+					"background": "url(./webp/20200903-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -279,12 +279,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200905-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20200905-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200905-PC.png) no-repeat fixed",
+					"background": "url(./webp/20200905-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -299,12 +299,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20200920-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20200920-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20200920-PC.png) no-repeat fixed",
+					"background": "url(./webp/20200920-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -319,12 +319,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20201003-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20201003-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20201003-PC.png) no-repeat fixed",
+					"background": "url(./webp/20201003-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -338,12 +338,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20201114-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20201114-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20201114-PC.png) no-repeat fixed",
+					"background": "url(./webp/20201114-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -357,12 +357,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210101-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210101-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210101-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210101-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -376,12 +376,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210202-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210202-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210202-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210202-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -395,12 +395,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210214-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210214-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210214-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210214-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -414,12 +414,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210408-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210408-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210408-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210408-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -433,12 +433,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210520-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210520-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210520-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210520-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -453,12 +453,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210626-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210626-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210626-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210626-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -472,12 +472,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210814-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210814-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210814-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210814-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -491,12 +491,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20210905-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20210905-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20210905-PC.png) no-repeat fixed",
+					"background": "url(./webp/20210905-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -511,12 +511,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20211120-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20211120-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20211120-PC.png) no-repeat fixed",
+					"background": "url(./webp/20211120-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -530,12 +530,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220106-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20220106-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220106-PC.png) no-repeat fixed",
+					"background": "url(./webp/20220106-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -549,12 +549,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220123-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20220123-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220123-PC.png) no-repeat fixed",
+					"background": "url(./webp/20220123-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -567,12 +567,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220716-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20220716-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220716-PC.png) no-repeat fixed",
+					"background": "url(./webp/20220716-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -591,12 +591,12 @@ $(document).ready(function(e) {
 		$("body").fadeTo("ease", 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./img/20220905-PC.png) no-repeat fixed center",
+					"background": "url(./webp/20220905-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./img/20220905-PC.png) no-repeat fixed",
+					"background": "url(./webp/20220905-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
