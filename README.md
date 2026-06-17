@@ -67,8 +67,6 @@ npm run build
 
 构建产物输出到 `dist`。
 
-```
-
 ### 目录结构
 
 ```text
