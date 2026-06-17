@@ -1,0 +1,24 @@
+/* PE */
+@media only screen and (min-device-width: 300px) {
+	/* BGM */
+	.bgm {
+		float: right;
+		width: 100%;
+	}
+}
+
+/* PC */
+@media only screen and (min-width: 960px) {
+
+	/* BGM */
+	.bgm {
+		float: right;
+	}
+}
+
+.modal.in .modal-dialog {
+	-webkit-transform: translate(0, 0) !important;
+	-ms-transform: translate(0, 0) !important;
+	-o-transform: translate(0, 0) !important;
+	transform: translate(0, 0) !important;
+}

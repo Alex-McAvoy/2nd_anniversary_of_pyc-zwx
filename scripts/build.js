@@ -6,9 +6,9 @@
  * 构建命令：npm run build
  *
  * 构建产物
- * 1. dist/css/anniversary.min.css
- * 2. dist/js/anniversary.min.js
- * 3. dist/framework、dist/webp、dist/resource
+ * 1. dist/resources/css/anniversary.min.css
+ * 2. dist/resources/js/anniversary.min.js
+ * 3. dist/resources/framework、dist/resources/images、dist/resources/audio、dist/resources/cursor、dist/resources/favicon
  */
 const fs = require("fs");
 const path = require("path");
@@ -18,21 +18,21 @@ const distDir = path.join(rootDir, "dist");
 const hexoAnniversaryDir = "I:/Hexo/source/2nd_anniversary_of_pyc-zwx";
 
 const cssFiles = [
-  "css/reset.css",
-  "css/index/index.css",
-  "css/index/title.css",
-  "css/index/arrow.css",
-  "css/mouse_cursor.css",
-  "css/sakura-falling.css",
-  "css/index/bgm.css",
-  "css/index/heart.css"
+  "resources/css/reset.css",
+  "resources/css/index/index.css",
+  "resources/css/index/title.css",
+  "resources/css/index/arrow.css",
+  "resources/css/mouse_cursor.css",
+  "resources/css/sakura-falling.css",
+  "resources/css/index/bgm.css",
+  "resources/css/index/heart.css"
 ];
 
 const jsFiles = [
-  "js/index.js",
-  "js/cursor-effects.js",
-  "js/sakura-falling.js",
-  "js/bgm.js"
+  "resources/js/index.js",
+  "resources/js/cursor-effects.js",
+  "resources/js/sakura-falling.js",
+  "resources/js/bgm.js"
 ];
 
 function optionalRequire(packageName) {
@@ -99,9 +99,12 @@ function copyStaticAssets() {
   /**
    * @Description 复制发布时需要保留的静态资源
    */
-  copyDir(path.join(rootDir, "framework"), path.join(distDir, "framework"));
-  copyDir(path.join(rootDir, "webp"), path.join(distDir, "webp"));
-  copyDir(path.join(rootDir, "resource"), path.join(distDir, "resource"));
+  copyDir(path.join(rootDir, "resources", "framework"), path.join(distDir, "resources", "framework"));
+  copyDir(path.join(rootDir, "resources", "images", "common"), path.join(distDir, "resources", "images", "common"));
+  copyDir(path.join(rootDir, "resources", "images", "webp"), path.join(distDir, "resources", "images", "webp"));
+  copyDir(path.join(rootDir, "resources", "audio"), path.join(distDir, "resources", "audio"));
+  copyDir(path.join(rootDir, "resources", "cursor"), path.join(distDir, "resources", "cursor"));
+  copyDir(path.join(rootDir, "resources", "favicon"), path.join(distDir, "resources", "favicon"));
 }
 
 function basicCssMinify(source) {
@@ -125,8 +128,7 @@ function rewriteCssUrls(source) {
    * @returns {string} 重写后的 CSS
    */
   return source
-    .replaceAll("../../resource/", "../resource/")
-    .replaceAll("../resource/", "../resource/");
+    .replaceAll("../../images/common/", "../images/common/");
 }
 
 function basicJsMinify(source) {
@@ -169,7 +171,7 @@ function buildCss() {
     ? new CleanCSS({ level: 2 }).minify(rewrittenSource).styles
     : basicCssMinify(rewrittenSource);
 
-  writeUtf8(path.join(distDir, "css", "anniversary.min.css"), styles);
+  writeUtf8(path.join(distDir, "resources", "css", "anniversary.min.css"), styles);
 }
 
 async function buildJs() {
@@ -211,7 +213,7 @@ async function buildJs() {
     code = obfuscated.getObfuscatedCode();
   }
 
-  writeUtf8(path.join(distDir, "js", "anniversary.min.js"), code);
+  writeUtf8(path.join(distDir, "resources", "js", "anniversary.min.js"), code);
 }
 
 async function buildHtml() {
@@ -221,29 +223,29 @@ async function buildHtml() {
   let html = readUtf8(path.join(rootDir, "index.html"));
 
   html = html.replace(
-    /\s*<link\s+[^>]*href="\.\/css\/(?:reset|mouse_cursor|sakura-falling)\.css"[^>]*>/g,
+    /\s*<link\s+[^>]*href="\.\/resources\/css\/(?:reset|mouse_cursor|sakura-falling)\.css"[^>]*>/g,
     ""
   );
   html = html.replace(
-    /\s*<link\s+[^>]*href="\.\/css\/index\/(?:index|title|arrow|bgm|heart)\.css"[^>]*>/g,
+    /\s*<link\s+[^>]*href="\.\/resources\/css\/index\/(?:index|title|arrow|bgm|heart)\.css"[^>]*>/g,
     ""
   );
   html = html.replace(
-    /(<link rel="shortcut icon" href="\.\/resource\/logo\.ico" type="image\/x-icon">)/,
-    '$1\n\t\t<link rel="stylesheet" href="./css/anniversary.min.css">'
+    /(<link rel="stylesheet" href="\.\/resources\/framework\/bootstrap-3\.4\.1-dist\.min\.css">)/,
+    '$1\n\t\t<link rel="stylesheet" href="./resources/css/anniversary.min.css">'
   );
 
   html = html.replace(
-    /\s*<script type="text\/JavaScript" src="\.\/js\/index\.js"><\/script>/g,
+    /\s*<script type="text\/JavaScript" src="\.\/resources\/js\/index\.js"><\/script>/g,
     ""
   );
   html = html.replace(
-    /\s*<script type="text\/javascript" src="\.\/js\/(?:cursor-effects|sakura-falling|bgm)\.js"><\/script>/g,
+    /\s*<script type="text\/javascript" src="\.\/resources\/js\/(?:cursor-effects|sakura-falling|bgm)\.js"><\/script>/g,
     ""
   );
   html = html.replace(
-    /(<script src="\.\/framework\/angular-1\.5\.5\.min\.js"><\/script>)/,
-    '$1\n\t\t<script src="./js/anniversary.min.js"></script>'
+    /(<script src="\.\/resources\/framework\/angular-1\.5\.5\.min\.js"><\/script>)/,
+    '$1\n\t\t<script src="./resources/js/anniversary.min.js"></script>'
   );
 
   const htmlMinifier = optionalRequire("html-minifier-terser");

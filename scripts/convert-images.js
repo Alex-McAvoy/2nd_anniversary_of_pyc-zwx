@@ -6,16 +6,16 @@
  * 脚本调用：npm run convert:images
  *
  * 脚本约定
- * 1. 原始图片保留在 img 目录中
- * 2. 转换后的 WebP 文件输出到 webp 目录中
+ * 1. 原始图片保留在 resources/images/original 目录中
+ * 2. 转换后的 WebP 文件输出到 resources/images/webp 目录中
  */
 const fs = require("fs");
 const path = require("path");
 const sharp = require("sharp");
 
 const rootDir = path.resolve(__dirname, "..");
-const originalDir = path.join(rootDir, "img");
-const webpDir = path.join(rootDir, "webp");
+const originalDir = path.join(rootDir, "resources", "images", "original");
+const webpDir = path.join(rootDir, "resources", "images", "webp");
 
 // 背景图片接近 16:9 全屏展示，保留桌面端清晰度
 const WEBP_WIDTH = 1920;
@@ -24,7 +24,7 @@ const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp"]);
 
 function getOriginalImages() {
   /**
-   * @Description 获取 img 目录下所有需要转换的原始图片
+   * @Description 获取 original 目录下所有需要转换的原始图片
    * @returns {Array<string>} 原始图片文件名列表
    */
   return fs.readdirSync(originalDir)
@@ -50,7 +50,7 @@ async function convertImage(inputPath, outputPath) {
 
 async function main() {
   /**
-   * @Description 批量转换 img 目录下的所有背景图片
+   * @Description 批量转换 original 目录下的所有背景图片
    */
   fs.mkdirSync(webpDir, { recursive: true });
 

@@ -1,0 +1,19 @@
+body {
+	cursor: url("../cursor/normal.cur"), default;
+}
+
+.left_arrow_div {
+	cursor: url("../cursor/link.cur"), pointer;
+}
+
+.right_arrow_div {
+	cursor: url("../cursor/link.cur"), pointer;
+}
+
+.goal.goal_wrap {
+	cursor: url("../cursor/Escritura.cur"), pointer;
+}
+
+.bgm {
+	cursor: url("../cursor/Escritura.cur"), pointer;
+}

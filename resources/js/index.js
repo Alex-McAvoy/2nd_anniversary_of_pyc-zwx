@@ -1,4 +1,4 @@
-﻿var app = angular.module('app', []);
+var app = angular.module('app', []);
 
 app.controller('HomeController', ['$scope', function($scope) {
 	//图标显示
@@ -219,15 +219,15 @@ $(document).ready(function(e) {
 	$("#goal_20200726").click(function() {
 		$(".title").html('<div class="wave loading ">一切的开始</div><br>' +
 			'<div class="wave loading">纪念我们那妙不可及的缘分</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20200726-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20200726-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20200726-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20200726-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -238,15 +238,15 @@ $(document).ready(function(e) {
 	$("#goal_20200824").click(function() {
 		$(".title").html('<div class="wave loading ">我们看的第一场电影</div><br>' +
 			'<div class="wave loading">你还记得“125军”和“摸头杀”么</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20200824-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20200824-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20200824-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20200824-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -257,15 +257,15 @@ $(document).ready(function(e) {
 	$("#goal_20200903").click(function() {
 		$(".title").html('<div class="wave loading ">hhhhh</div><br>' +
 			'<div class="wave loading ">第一次完美踩雷的“投喂”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20200903-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20200903-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20200903-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20200903-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -276,15 +276,15 @@ $(document).ready(function(e) {
 	$("#goal_20200905").click(function() {
 		$(".title").html('<div class="wave loading ">The first day</div><br>' +
 			'<div class="wave loading">还记得那天的故事么</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20200905-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20200905-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20200905-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20200905-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -296,15 +296,15 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">我们官宣的故事你还记得么？</div><br>' +
 			'<div class="wave loading">第一次暴躁的“护短”</div><br>' +
 			'<div class="wave loading">晚风与我们</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20200920-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20200920-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20200920-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20200920-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -316,15 +316,15 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">我们的第一次旅行</div><br>' +
 			'<div class="wave loading">阿那亚的海风与日出</div><br>' +
 			'<div class="wave loading">你还记得吗？</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20201003-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20201003-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20201003-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20201003-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -335,15 +335,15 @@ $(document).ready(function(e) {
 	$("#goal_20201114").click(function() {
 		$(".title").html('<div class="wave loading ">陪你度过的第一个生日</div><br>' +
 			'<div class="wave loading">“成为网红第一步”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20201114-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20201114-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20201114-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20201114-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -354,15 +354,15 @@ $(document).ready(function(e) {
 	$("#goal_20210101").click(function() {
 		$(".title").html('<div class="wave loading ">我们的第一次跨年</div><br>' +
 			'<div class="wave loading">“一起看的第一场演唱会”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210101-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210101-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210101-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210101-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -373,15 +373,15 @@ $(document).ready(function(e) {
 	$("#goal_20210202").click(function() {
 		$(".title").html('<div class="wave loading ">第一次滑雪</div><br>' +
 			'<div class="wave loading">“也是你第一次来到我生活的地方”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210202-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210202-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210202-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210202-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -392,15 +392,15 @@ $(document).ready(function(e) {
 	$("#goal_20210214").click(function() {
 		$(".title").html('<div class="wave loading ">第一个情人节</div><br>' +
 			'<div class="wave loading">“Hakuna Matata”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210214-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210214-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210214-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210214-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -411,15 +411,15 @@ $(document).ready(function(e) {
 	$("#goal_20210408").click(function() {
 		$(".title").html('<div class="wave loading ">陪我度过的第一个生日</div><br>' +
 			'<div class="wave loading">我爱你，胜过朝夕</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210408-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210408-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210408-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210408-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -430,15 +430,15 @@ $(document).ready(function(e) {
 	$("#goal_20210520").click(function() {
 		$(".title").html('<div class="wave loading ">第一个520</div><br>' +
 			'<div class="wave loading">星河滚烫，你是人间理想</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210520-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210520-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210520-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210520-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -450,15 +450,15 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">第一次陪你毕业</div><br>' +
 			'<div class="wave loading">我也终于享受了一次毕业</div><br>' +
 			'<div class="wave loading ">我们毕业啦</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210626-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210626-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210626-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210626-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -469,15 +469,15 @@ $(document).ready(function(e) {
 	$("#goal_20210814").click(function() {
 		$(".title").html('<div class="wave loading ">度过我们的第一个七夕</div><br>' +
 			'<div class="wave loading">也是我第一次收到了“花”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210814-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210814-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210814-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210814-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -488,15 +488,15 @@ $(document).ready(function(e) {
 	$("#goal_20210905").click(function() {
 		$(".title").html('<div class="wave loading ">我们一周年啦！！！</div><br>' +
 			'<div class="wave loading">感谢我们的双向奔赴</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20210905-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20210905-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20210905-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20210905-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -508,15 +508,15 @@ $(document).ready(function(e) {
 		$(".title").html('<div class="wave loading ">你第一次来到武汉</div><br>' +
 			'<div class="wave loading ">同时我们又度过了</div><br>' +
 			'<div class="wave loading">好多生日中的第二个生日</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20211120-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20211120-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20211120-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20211120-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -527,15 +527,15 @@ $(document).ready(function(e) {
 	$("#goal_20220106").click(function() {
 		$(".title").html('<div class="wave loading ">我们的第一次“环球之旅”</div><br>' +
 			'<div class="wave loading">之后还要一起去好多次哦</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20220106-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20220106-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20220106-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20220106-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -546,15 +546,15 @@ $(document).ready(function(e) {
 	$("#goal_20220123").click(function() {
 		$(".title").html('<div class="wave loading ">第一个密室</div><br>' +
 			'<div class="wave loading">“看，那里有个大冤种”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20220123-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20220123-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20220123-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20220123-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -564,15 +564,15 @@ $(document).ready(function(e) {
 	// 2022-07-16
 	$("#goal_20220716").click(function() {
 		$(".title").html('<div class="wave loading ">真正意义上的第一次“惊喜”</div><br>');
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20220716-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20220716-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20220716-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20220716-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}
@@ -588,15 +588,15 @@ $(document).ready(function(e) {
 			'<div class="wave loading">请握紧我的手</div><br>' +
 			'<div class="wave loading">坚定地迈向未来</div><br>');
 
-		$("body").fadeTo("ease", 0.3, function() {
+		$("body").fadeTo(300, 0.3, function() {
 			if (viewport < 960) { // PE
 				$(this).css({
-					"background": "url(./webp/20220905-PC.webp) no-repeat fixed center",
+					"background": "url(./resources/images/webp/20220905-PC.webp) no-repeat fixed center",
 					"background-size": "cover"
 				});
 			} else { // PC
 				$(this).css({
-					"background": "url(./webp/20220905-PC.webp) no-repeat fixed",
+					"background": "url(./resources/images/webp/20220905-PC.webp) no-repeat fixed",
 					"background-size": "cover"
 				});
 			}

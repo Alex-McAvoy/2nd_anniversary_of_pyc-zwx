@@ -18,7 +18,7 @@
 	}
 	
 	.wave {
-		background-image: url("../../resource/wave.png");
+		background-image: url("../../images/common/wave.png");
 		-moz-background-clip: text;
 		-o-background-clip: text;
 		-webkit-background-clip: text;
@@ -73,7 +73,7 @@
 	}
 
 	.wave {
-		background-image: url("../../resource/wave.png");
+		background-image: url("../../images/common/wave.png");
 		-moz-background-clip: text;
 		-o-background-clip: text;
 		-webkit-background-clip: text;
